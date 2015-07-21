@@ -17,34 +17,35 @@ public class build extends PApplet {
 public void setup() {
 
   size(600,600);
+  rectMode(CENTER);
 
   pushMatrix();
     translate(100,height/2);
-    rotate(radians(9*1));
+    rotate(radians(45));
     rect(0,0,50,50);
   popMatrix();
 
   pushMatrix();
     translate(200,height/2);
-    rotate(radians(9*2));
+    rotate(radians(45));
     rect(0,0,50,50);
   popMatrix();
 
   pushMatrix();
     translate(300,height/2);
-    rotate(radians(9*3));
+    rotate(radians(45));
     rect(0,0,50,50);
   popMatrix();
 
   pushMatrix();
     translate(400,height/2);
-    rotate(radians(9*4));
+    rotate(radians(45));
     rect(0,0,50,50);
   popMatrix();
 
   pushMatrix();
     translate(500,height/2);
-    rotate(radians(9*5));
+    rotate(radians(45));
     rect(0,0,50,50);
   popMatrix();
 
