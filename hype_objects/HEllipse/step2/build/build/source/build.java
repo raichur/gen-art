@@ -16,7 +16,7 @@ import java.io.IOException;
 
 public class build extends PApplet {
 
-HRect d;
+HEllipse d;
 
 public void setup() {
 
@@ -30,7 +30,7 @@ public void setup() {
       .strokeWeight(1)
       .stroke(0xffFF3300)
       .fill(0xff111111)
-      .size((int)random(25,75))
+      .size((int)random(25,75),(int)random(50,150))
       .rotate((int)random(360))
       .loc((int)random(width),(int)random(height))
       .anchorAt(H.CENTER)

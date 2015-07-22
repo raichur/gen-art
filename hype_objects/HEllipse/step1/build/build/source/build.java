@@ -16,7 +16,7 @@ import java.io.IOException;
 
 public class build extends PApplet {
 
-HRect d;
+HEllipse d;
 
 public void setup() {
 
