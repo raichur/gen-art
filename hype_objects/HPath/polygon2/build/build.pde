@@ -9,7 +9,7 @@ void setup() {
   for(int i = 0; i < 100; i++) {
     d = new HPath();
     d
-      .polygon(5)
+      .polygon((int)random(3,9))
       .strokeWeight(1)
       .stroke(#FF3300)
       .fill(#111111)
