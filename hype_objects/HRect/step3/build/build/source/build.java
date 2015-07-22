@@ -25,12 +25,12 @@ public void setup() {
   smooth();
 
   for(int i = 0; i < 200; i++) {
-    d = new HRect().rounding(10);
+    d = new HRect();
     d
       .strokeWeight(1)
       .stroke(0xffFF3300)
-      .fill(0xff111111, 200)
-      .size((int)random(50,250))
+      .fill(0xff111111)
+      .size((int)random(50,150),(int)random(100,300))
       .rotate((int)random(360))
       .loc((int)random(width),(int)random(height))
       .anchorAt(H.CENTER)
