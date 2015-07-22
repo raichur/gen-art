@@ -16,24 +16,24 @@ import java.io.IOException;
 
 public class build extends PApplet {
 
-HPath d;
+HBox d;
 
 public void setup() {
 
-  size(600,600);
-  H.init(this).background(0xff202020);
+  size(600,600,P3D);
+  H.init(this).background(0xff202020).use3d(true);
   smooth();
 
   for(int i = 0; i < 100; i++) {
-    d = new HPath();
+    d = new HBox();
     d
-      .triangle(H.ISOCELES,H.TOP)
+      .depth((int)random(25,125))
+      .width((int)random(25,125))
+      .height((int)random(25,125))
       .strokeWeight(1)
       .stroke(0xffFF3300)
       .fill(0xff111111)
-      .size((int)random(50,150),(int)random(75,175))
-      .rotate((int)random(360))
-      .loc((int)random(width),(int)random(height))
+      .loc((int)random(width),(int)random(height),(int)random(-100,100))
       .anchorAt(H.CENTER)
     ;
     H.add(d);

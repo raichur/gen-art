@@ -9,11 +9,11 @@ void setup() {
   for(int i = 0; i < 100; i++) {
     d = new HPath();
     d
-      .triangle(H.ISOCELES,H.TOP)
+      .polygon((int)random(3,9))
       .strokeWeight(1)
       .stroke(#FF3300)
       .fill(#111111)
-      .size((int)random(50,150),(int)random(75,175))
+      .size((int)random(75,175))
       .rotate((int)random(360))
       .loc((int)random(width),(int)random(height))
       .anchorAt(H.CENTER)
