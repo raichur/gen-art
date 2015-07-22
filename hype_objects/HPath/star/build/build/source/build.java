@@ -27,7 +27,7 @@ public void setup() {
   for(int i = 0; i < 100; i++) {
     d = new HPath();
     d
-      .star(5,0.5f)
+      .polygon((int)random(3,9))
       .strokeWeight(1)
       .stroke(0xffFF3300)
       .fill(0xff111111)
