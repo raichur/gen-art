@@ -21,7 +21,7 @@ HBox d;
 public void setup() {
 
   size(600,600,P3D);
-  H.init(this).background(0xff202020).use3d(true);
+  H.init(this).background(0xff202020).use3D(true);
   smooth();
 
   for(int i = 0; i < 100; i++) {

@@ -7,7 +7,7 @@ void setup() {
   H.init(this).background(#202020);
   smooth();
 
-  colors = new HColorPool(#FFFFFF,#F7F7F7,#ECECEC,#333333,#0095A8,00616F,#FF3300,#FF6600);
+  colors = new HColorPool(#FFFFFF,#F7F7F7,#ECECEC,#333333,#0095A8,#00616F,#FF3300,#FF6600);
 
   for(int i = 0; i < 100; i++) {
     d = new HRect();

@@ -21,7 +21,7 @@ HBox d;
 public void setup() {
 
   size(600,600,P3D);
-  H.init(this).background(0xff202020).use3d(true);
+  H.init(this).background(0xff202020).use3D(true);
   smooth();
 
   for(int i = 0; i < 100; i++) {
@@ -32,7 +32,10 @@ public void setup() {
       .height((int)random(25,125))
       .strokeWeight(1)
       .stroke(0xffFF3300)
-      .fill(0xff111111)
+      .fill(0xff111111,150)
+      .rotationX((int)random(360))
+      .rotationY((int)random(360))
+      .rotationZ((int)random(360))
       .loc((int)random(width),(int)random(height),(int)random(-100,100))
       .anchorAt(H.CENTER)
     ;
