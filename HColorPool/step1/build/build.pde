@@ -10,7 +10,7 @@ void setup() {
   colors = new HColorPool(#FFFFFF,#F7F7F7,#ECECEC,#333333,#0095A8,00616F,#FF3300,#FF6600);
 
   for(int i = 0; i < 100; i++) {
-    d = new HRect;
+    d = new HRect();
     d
       .strokeWeight(1)
       .stroke(#000000)
