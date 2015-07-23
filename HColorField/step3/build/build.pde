@@ -8,8 +8,8 @@ void setup() {
   smooth();
 
   colors = new HColorField(width,height)
-    .addPoint(0,height/2,#FF3300,0.3)
-    .addPoint(width,height/2,#0095A8,0.3)
+    .addPoint(0,height/2,#FF3300,0.5)
+    .addPoint(width,height/2,#0095A8,0.5)
     .fillOnly()
   ;
 
