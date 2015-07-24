@@ -35,10 +35,14 @@ class Walker {
       
       x++;
       
-    } else if(choice == 2) {
+    } else if(choice == 1) {
       
       x--;
       
+    } else if(choice == 2) {
+    
+      y++;
+    
     } else {
       
       y--;
