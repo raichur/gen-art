@@ -29,25 +29,12 @@ class Walker {
   // Random floating point var between 0 and 3.999 and converts it to an integer.
   void step() {
     
-    int choice = int(random(4)); // 0, 1, 2, or 3
+    int stepx = int(random(3))-1; // -1,0,1
+    int stepy = int(random(3))-1; // -1,0,1
     
-    if(choice == 0){
-      
-      x++;
-      
-    } else if(choice == 1) {
-      
-      x--;
-      
-    } else if(choice == 2) {
+    x += stepx;
+    y += stepy;
     
-      y++;
-    
-    } else {
-      
-      y--;
-      
-    }
   }
 
 }
